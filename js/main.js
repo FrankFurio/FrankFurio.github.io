@@ -147,9 +147,11 @@
 		}
 	});
 
-	pageSize = 3;
+	var pageSize = 6;
 
-	showPage = function(page) {
+	var showPage = function(page) {
+		// pageSize = 3;
+		console.log("here");
     	$(".content").hide();
     	$(".content").each(function(n) {
         	if (n >= pageSize * (page - 1) && n < pageSize * page)
